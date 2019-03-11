@@ -3,9 +3,10 @@ from flask import Flask, request
 app = Flask(__name__)
 
 
-# @app.route('/')
-# def hello():
-#     return 'Hello!'
+@app.route('/')
+def hello():
+    return 'Hello!'
+
 
 @app.route('/request')
 def request_info():
